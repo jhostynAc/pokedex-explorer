@@ -128,7 +128,7 @@ export default function HomeScreen({ navigation }) {
                         renderItem={({ item }) => (
                             <CardList 
                                 pokemon={item} 
-                                onPress={() => navigation.navigate('DetallePokemon', { id: item.id })}
+                                onPress={() => navigation.navigate('DetallesPokemon', { pokemon: item })}
                             />
                         )}
                         onEndReached={() => {

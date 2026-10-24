@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet,Pressable } from "react-native";
 import {Ionicons} from "@expo/vector-icons";
 import {colors, spacing,radius} from "../theme";
 
-export default function EstadoVacio(icono, titulo, mensaje, textoAction, onAction) {
+export default function EstadoVacio({icono, titulo, mensaje, textoAction, onAction}) {
     return (
         <View style={style.contenedor}>
             <View style={style.circulo}>
